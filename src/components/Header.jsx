@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 function Header() {
   return (
     <div>
+      
          {/* Spinner Start */}
     {/* <div
       id="spinner"
@@ -29,11 +29,11 @@ function Header() {
           >
             <small className="me-3 text-light">
               <i className="fa fa-map-marker-alt me-2" />
-              123 Street, New York, USA
+              Adress
             </small>
             <small className="me-3 text-light">
               <i className="fa fa-phone-alt me-2" />
-              +012 345 6789
+              Phone Number
             </small>
             <small className="text-light">
               <i className="fa fa-envelope-open me-2" />
@@ -43,38 +43,29 @@ function Header() {
         </div>
         <div className="col-lg-4 text-center text-lg-end">
           <div
-            className="d-inline-flex align-items-center"
+            className="d-inline-flex gap-4 align-items-center"
             style={{ height: 45 }}
           >
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
               to=""
+              href='#'
             >
               <i className="fab fa-twitter fw-normal" />
             </a>
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
               to=""
+              href='#'
             >
               <i className="fab fa-facebook-f fw-normal" />
             </a>
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
               to=""
-            >
-              <i className="fab fa-linkedin-in fw-normal" />
-            </a>
-            <a
-              className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-              to=""
+              href='#'
             >
               <i className="fab fa-instagram fw-normal" />
-            </a>
-            <a
-              className="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
-              to=""
-            >
-              <i className="fab fa-youtube fw-normal" />
             </a>
           </div>
         </div>
@@ -82,13 +73,9 @@ function Header() {
     </div>
     {/* Topbar End */}
     {/* Navbar & Hero Start */}
-    <div className="container-fluid position-relative p-0">
-      <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+    <div className="container-fluid position-relative p-0 ">
+      <nav className="navbar navbar-light navbar-expand-lg bg-white  px-4 px-lg-5 py-8  ">
         <Link to="/" className="navbar-brand p-0">
-          <h1 className="text-primary m-0">
-            <i className="fa fa-map-marker-alt me-3" />
-            Tourist
-          </h1>
           {/* <img src="img/logo.png" alt="Logo"> */}
         </Link>
         <button
@@ -113,37 +100,11 @@ function Header() {
             <Link to="/Packages" className="nav-item nav-link">
               Packages
             </Link>
-            <div className="nav-item dropdown">
-              <Link
-                to="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Pages
-              </Link>
-              <div className="dropdown-menu m-0">
-                <Link to="/Destination" className="dropdown-item">
-                  Destination
-                </Link>
-                <Link to="/Booking" className="dropdown-item">
-                  Booking
-                </Link>
-                <Link to="/Team" className="dropdown-item">
-                  Travel Guides
-                </Link>
-                <Link to="/Testimonial" className="dropdown-item">
-                  Testimonial
-                </Link>
-                <Link to="/Error" className="dropdown-item">
-                  404 Page
-                </Link>
-              </div>
-            </div>
             <Link to="/Contact" className="nav-item nav-link">
               Contact
             </Link>
           </div>
-          <Link to="/" className="btn btn-primary rounded-pill py-2 px-4">
+          <Link to="/" className="btn btn-primary rounded-md py-2 px-4 ">
             Register
           </Link>
         </div>

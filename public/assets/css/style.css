@@ -1,11 +1,28 @@
 /********** Template CSS **********/
 :root {
-    --primary: #86B817;
+    --primary: #0d6efd;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
 }
 
+.grid-right-side
+.glass-header {
+  background-color: rgba(255, 255, 255, 0.15); /* transparent white */
+  backdrop-filter: blur(10px); /* glass blur */
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle line */
+  color: #ffffff;
+}
+
+.booking-label {
+  font-weight: 600;
+  color: #495057; /* Bootstrap's secondary text color */
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+grid-right-side
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -21,7 +38,6 @@
     bottom: 45px;
     z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -43,13 +59,31 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     transition: .5s;
+   
+}
+.email-newsLetter-btn{
+    height: 100%;
+    font-size: 0.75rem;
+    background-color: #0d6efd;
+    color: #FFFFFF;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
-}
+    background-color: #0d6efd;
+    margin-left: 4%;
+    border: none;
+    border-radius: 4px;
 
+}
+.btn-booking-form{
+    color: #FFFFFF;
+    background-color: #FFD600;
+    margin-left: 75%;
+    border: none;
+    border-radius: 4px;
+}
 .btn-square {
     width: 38px;
     height: 38px;
@@ -75,26 +109,51 @@
     font-weight: normal;
     border-radius: 0px;
 }
+.booking {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    gap:4%;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
 
+}
+.grid-left-side,.grid-right-side{
+    width: 100%;
+}
+.grid-right-side{
+    margin-top: 6%;
+}
 
-/*** Navbar ***/
+.booking-input {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  background-color: #fff;
+}
+
+.booking-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.2);
+}
+/*** Navbar ***/    
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
     margin-right: 25px;
-    padding: 35px 0;
-    color: #FFFFFF !important;
-    font-size: 18px;
-    font-weight: 600;
     outline: none;
     transition: .5s;
+    color: #6c757db1 !important; 
+    font-weight: 500; 
+    font-size: 0.8rem;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark) !important;
 }
-
+booking-input
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary) !important;
@@ -172,11 +231,16 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url(../img/view.jpg) center center / cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
+
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
@@ -227,6 +291,7 @@
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
+    height: 100%;
 }
 
 .service-item:hover {
@@ -267,12 +332,6 @@
 
 
 /*** Booking ***/
-.booking {
-    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/booking.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 /*** Team ***/
@@ -379,13 +438,14 @@
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--light);
     font-weight: normal;
+    font-size: 0.6rem;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
@@ -420,12 +480,17 @@
     box-shadow: none;
 }
 
-.footer .copyright {
+.footer .copyright {  
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
+    display: flex;
+    justify-content: center;
 }
 
+.coyright-text{
+    width: 100%;
+}
 .footer .copyright a {
     color: var(--light);
 }

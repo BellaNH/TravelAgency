@@ -2,6 +2,7 @@ import React from 'react'
 
 function Team() {
   return (
+  
     <div>
         <div className="container-fluid bg-primary py-5 mb-5 hero-header">
     <div className="container py-5">
@@ -25,7 +26,7 @@ function Team() {
       </div>
     </div>
   </div>
-      {/* Team Start */}
+
       <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">

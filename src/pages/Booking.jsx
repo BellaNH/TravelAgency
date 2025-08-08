@@ -3,30 +3,9 @@ import React from 'react'
 function Booking() {
   return (
     <div>
-        <div className="container-fluid bg-primary py-5 mb-5 hero-header">
-    <div className="container py-5">
-      <div className="row justify-content-center py-5">
-        <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-          <h1 className="display-3 text-white animated slideInDown">Booking</h1>
-          <nav aria-label="breadcrumb">
-            <ol className="breadcrumb justify-content-center">
-              <li className="breadcrumb-item">
-                <a href="/">Home</a>
-              </li>
-              <li
-                className="breadcrumb-item text-white active"
-                aria-current="page"
-              >
-                Booking
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
+
       {/* Process Start */}
-      <div className="container-xxl py-5">
+      {/*<div className="container-xxl py-5">
       <div className="container">
         <div className="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -98,111 +77,72 @@ function Booking() {
         </div>
       </div>
     </div>
+    */}
     {/* Process Start */}
     {/* Booking Start */}
-    <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div className="container">
-        <div className="booking p-5">
-          <div className="row g-5 align-items-center">
-            <div className="col-md-6 text-white">
-              <h6 className="text-white text-uppercase">Booking</h6>
-              <h1 className="text-white mb-4">Online Booking</h1>
-              <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-              <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
-              </p>
-              <a className="btn btn-outline-light py-3 px-5 mt-2" href="">
-                Read More
-              </a>
-            </div>
-            <div className="col-md-6">
-              <h1 className="text-white mb-4">Book A Tour</h1>
-              <form>
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input
-                        type="text"
-                        className="form-control bg-transparent"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label htmlFor="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input
-                        type="email"
-                        className="form-control bg-transparent"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label htmlFor="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div
-                      className="form-floating date"
-                      id="date3"
-                      data-target-input="nearest"
-                    >
-                      <input
-                        type="text"
-                        className="form-control bg-transparent datetimepicker-input"
-                        id="datetime"
-                        placeholder="Date & Time"
-                        data-target="#date3"
-                        data-toggle="datetimepicker"
-                      />
-                      <label htmlFor="datetime">Date &amp; Time</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <select
-                        className="form-select bg-transparent"
-                        id="select1"
-                      >
-                        <option value={1}>Destination 1</option>
-                        <option value={2}>Destination 2</option>
-                        <option value={3}>Destination 3</option>
-                      </select>
-                      <label htmlFor="select1">Destination</label>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="form-floating">
-                      <textarea
-                        className="form-control bg-transparent"
-                        placeholder="Special Request"
-                        id="message"
-                        style={{ height: 100 }}
-                        defaultValue={""}
-                      />
-                      <label htmlFor="message">Special Request</label>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <button
-                      className="btn btn-outline-light w-100 py-3"
-                      type="submit"
-                    >
-                      Book Now
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+    <div className="container-l wow fadeInUp" data-wow-delay="0.1s">
+  <div className="container">
+    <div className="booking d-flex flex-column flex-md-row gap-4 p-4 p-md-5 rounded-4 shadow">
+
+      {/* LEFT SIDE */}
+      <div className="grid-left-side w-100 d-flex flex-column gap-3">
+        <h1 className="text-primary">Booking online</h1>
+
+        <div className="d-flex flex-column">
+          <p className="mb-1 booking-label">Destination</p>
+          <input className="booking-input ps-3 pe-4 py-2" placeholder="Saisir une destination" />
+        </div>
+
+        <div className="d-flex gap-3 flex-column flex-md-row">
+          <div className="d-flex flex-column w-100">
+            <p className="mb-1 booking-label">Date du départ</p>
+            <input type="date" className="py-2 ps-3 pe-4 booking-input" />
           </div>
+          <div className="d-flex flex-column w-100">
+            <p className="mb-1 booking-label">Date du retour</p>
+            <input type="date" className="py-2 ps-3 pe-4 booking-input" />
+          </div>
+        </div>
+
+        <div className="d-flex flex-column">
+          <p className="mb-1 booking-label">Budget de voyage</p>
+          <input className="booking-input ps-3 pe-4 py-2" placeholder="Ex: 200€ - 1000€" />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="grid-right-side w-100 d-flex flex-column gap-3">
+        <h2 className="text-primary d-md-none">Détails personnels</h2>
+
+        <div className="d-flex gap-3 flex-column flex-md-row">
+          <div className="d-flex flex-column w-100">
+            <p className="mb-1 booking-label">Nombre d'adultes</p>
+            <input className="py-2 ps-3 pe-4 booking-input" />
+          </div>
+          <div className="d-flex flex-column w-100">
+            <p className="mb-1 booking-label">Nombre d’enfants</p>
+            <input className="py-2 ps-3 pe-4 booking-input" />
+          </div>
+        </div>
+
+        <div className="d-flex flex-column">
+          <p className="mb-1 booking-label">Numéro de téléphone</p>
+          <input className="booking-input ps-3 pe-4 py-2" placeholder="Ex: +213 555 123 456" />
+        </div>
+
+        <div className="d-flex flex-column">
+          <p className="mb-1 booking-label">Adresse Email</p>
+          <input className="booking-input ps-3 pe-4 py-2" placeholder="Ex: email@example.com" />
+        </div>
+
+        <div className="d-flex justify-content-start">
+          <button className="btn btn-booking-form py-2 px-4">Envoyer</button>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
     {/* Booking Start */}
     </div>
   )
