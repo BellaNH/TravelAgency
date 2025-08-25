@@ -11,17 +11,17 @@ export default function Footer() {
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
             <h4 className="text-white mb-3">Company</h4>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="#">
               About Us
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="#">
               Contact Us
             </a>
             <div className="d-flex gap-3 pt-2">
-              <a className="btn btn-outline-light btn-social "  href="/">
+              <a className="btn btn-outline-light btn-social "  href="#">
                 <i className="fab fa-instagram " />
               </a>
-              <a className="btn btn-outline-light btn-social " href="/">
+              <a className="btn btn-outline-light btn-social " href="#">
                 <i className="fab fa-facebook-f " />
               </a>
             </div>
