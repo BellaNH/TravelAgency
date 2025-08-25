@@ -117,10 +117,6 @@ function Packages() {
       </div>
     </div>
 
-    {/* Booking Start */}
-    {/* Process Start */}
-    
-    {/* Process Start */}
     </div>
   )
 }

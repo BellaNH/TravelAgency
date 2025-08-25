@@ -22,7 +22,7 @@ function Destination() {
               >
                 <a
                   className="position-relative d-block overflow-hidden"
-                  href=""
+                   href="javascript:void(0);"
                 >
                   <img
                   style={{height:"50vh",width:"100%"}}
@@ -44,7 +44,7 @@ function Destination() {
               >
                 <a
                   className="position-relative d-block overflow-hidden"
-                  href=""
+                   href="javascript:void(0);"
                 >
                   <img
                     className="img-fluid"
@@ -65,7 +65,7 @@ function Destination() {
               >
                 <a
                   className="position-relative d-block overflow-hidden"
-                  href=""
+                   href="javascript:void(0);"
                 >
                   <img
                     className="img-fluid"
@@ -89,7 +89,7 @@ function Destination() {
           >
             <a
               className="position-relative d-block h-100 overflow-hidden"
-              href=""
+               href="javascript:void(0);"
             >
               <img
                 className="img-fluid position-absolute w-100 h-100"
