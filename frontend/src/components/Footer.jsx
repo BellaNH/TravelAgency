@@ -11,19 +11,19 @@ export default function Footer() {
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
             <h4 className="text-white mb-3">Company</h4>
-            <a className="btn btn-link" href="#">
+            <button className="btn btn-link">
               About Us
-            </a>
-            <a className="btn btn-link" href="#">
+            </button>
+            <button className="btn btn-link">
               Contact Us
-            </a>
+            </button>
             <div className="d-flex gap-3 pt-2">
-              <a className="btn btn-outline-light btn-social "  href="#">
+              <button className="btn btn-outline-light btn-social " >
                 <i className="fab fa-instagram " />
-              </a>
-              <a className="btn btn-outline-light btn-social " href="#">
+              </button>
+              <button className="btn btn-outline-light btn-social ">
                 <i className="fab fa-facebook-f " />
-              </a>
+              </button>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 ">
@@ -68,14 +68,14 @@ export default function Footer() {
           <div className="row">
             <div className="coyright-text col-md-6 text-center w-[100%]">
               ©{" "}
-              <a className="border-bottom" href="#">
+              <button className="border-bottom">
                 Copyright
-              </a>
+              </button>
               , All Right Reserved.
               Designed By{" "}
-              <a className="border-bottom" href="https://github.com/ParasSalunke">
+              <button className="border-bottom" href="https://github.com/ParasSalunke">
                 Paras Salunke
-              </a>
+              </button>
             </div>
           </div>
         </div>
